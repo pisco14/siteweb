@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 1</title>
+</head>
+<body>
+     <style>
+        body {
+           font-size: 30px;
+           margin-left: 1%;
+           background-color: rgb(245, 223, 196);
+        }
+        body h1{
+            text-align: center;
+            padding: 10px;
+            background-color: orange;
+        }
+        div input{
+            width: 200px;
+    height: 35px;
+    border-color: #f1500b;
+    border-radius: 5px;
+    font-size: large;
+    
+        }
+        div button{
+            width: 10%;
+            font-size: 70%;
+            border-radius: 5px;
+            background-color: orange;
+        }
+        div{
+            padding: 1%;
+            border: solid 2px;
+            
+        }
+    </style>
+    <h1>Exercice 1 : Programmation en JavaScript</h1>
+
+    <!-- Question 1: Vérification de l'âge -->
+    <div>
+        <h2>1.Test de l'âge</h2>
+        <label for="age">Entrez votre âge :</label>
+        <input type="number" id="age" placeholder="Votre âge">
+        <button onclick="verifierAge()">Vérifier</button>
+        <p id="resultat-age"></p>
+    </div>
+
+    <!-- Question 2: Pair ou impair -->
+    <div>
+        <h2>2.Pair ou impair</h2>
+        <label for="nombre">Entrez un nombre :</label>
+        <input type="number" id="nombre" placeholder="Nombre">
+        <button onclick="verifierPairImpair()">Vérifier</button>
+        <p id="resultat-pair-impair"></p>
+    </div>
+
+    <!-- Question 3: Mois correspondant -->
+    <div>
+        <h2>3.Nom du mois</h2>
+        <label for="mois">Entrez le numéro du mois (1-12) :</label>
+        <input type="number" id="mois" min="1" max="12" placeholder="Numéro du mois">
+        <button onclick="afficherMois()">Afficher</button>
+        <p id="resultat-mois"></p>
+    </div>
+
+    <script src="exercice1.js"></script>
+</body>
+</html>
